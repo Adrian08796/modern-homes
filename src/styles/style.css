@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* @layer components {
+    .MyButton {
+        @apply font-bold 
+            text-purple-600
+            mt-5 
+            border-4
+            px-8
+            py-2
+            rounded-full;
+
+        @apply
+            border-purple-600
+            hover:bg-purple-600
+            active:bg-purple-700
+            hover:text-white;
+    }
+
+    .Card {
+        @apply
+            bg-slate-50
+            overflow-hidden
+            w-96
+            min-h-96
+            mt-12
+            mx-auto
+            rounded-lg
+            shadow-xl
+            p-3
+    }
+} */
