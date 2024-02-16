@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      
+      backgroundImage: {
+        'hero-pattern': "url('/images/Hero.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+
       screens: {
         xs: "300px",
         // => @media (min-width: 640px) { ... }
