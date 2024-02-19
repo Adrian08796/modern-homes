@@ -3,15 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
       backgroundImage: {
-        'hero-pattern': "url('/images/Hero.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        "hero-pattern": "url('/images/Hero.png')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
 
       screens: {
-        xs: "300px",
-        // => @media (min-width: 640px) { ... }
+        smallPhone: "300px",
+        phone: "300px",
+        smallTablet: "768px",
+        tablet: "992px",
+        laptop: "1024px",
+        desktop: "1280px",
       },
 
       colors: {

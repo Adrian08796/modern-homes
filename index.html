@@ -12,14 +12,15 @@
 
   <body class="bg-slate-900 flex flex-col items-center m-5">
     <!-- Container start-->
-    <section class="bg-slate-800 m-5 p-8 rounded-xl">
+    <section
+      class="max-w-[1000px] w-full bg-slate-800 smallTablet:mt-10 smallTablet:px-10 smallTablet:py-10 rounded-xl smallPhone:px-4 smallPhone:py-5 smallPhone:m-0">
       <!-- Header section start -->
       <header>
         <nav
           role="navigation"
-          class="flex justify-between w-[993px] text-yellow-400 bg-transparent py-4">
+          class="w-full flex justify-between items-center laptop:-w-[768px] text-yellow-400 bg-transparent py-4">
           <!-- Nav buttons start -->
-          <ul class="flex flex-row">
+          <ul class="flex flex-row phone:hidden smallTablet:flex">
             <li>
               <a
                 class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
@@ -58,6 +59,12 @@
             >Sign up</a
           >
           <!-- Sign up End -->
+          <a
+            class="smallTablet:hidden text-white text-2xl rounded-lg px-5 py-2"
+            href="./src/pages/Sign-up.html"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <!-- Phone menu -->
         </nav>
       </header>
       <!-- Header section end -->
@@ -65,10 +72,11 @@
       <!-- Hero section start -->
       <section
         role="Modern House Design Hero"
-        class="bg-[url('/src/assets/images/Hero/Hero.png')] w-full h-[760px] object-cover rounded-xl flex justify-center items-center">
+        class="w-full bg-[url('/src/assets/images/Hero/Hero.png')] bg-[center] aspect-square h-[760px] object-cover bg-no-repeat rounded-xl flex justify-center items-center">
         <div
-          class="w-[800px] h-[300px] bg-transparent/20 backdrop-blur-sm border-2 border-slate-400 rounded-2xl p-2">
-          <h1 class="font-sans text-6xl text-slate-300 pt-4 text-center">
+          class="max-w-[800px] h-[300px] bg-transparent/40 backdrop-blur border-2 border-slate-400 rounded-2xl p-2">
+          <h1
+            class="font-sans phone:text-3xl smallTablet:text-5xl tablet:text-6xl text-slate-300 pt-4 text-center">
             Building <code class="text-yellow-500">the Future</code>
           </h1>
           <p class="text-neutral-100 text-center mb-5 mt-5">
@@ -78,7 +86,7 @@
           </p>
           <div class="w-full h-[60px] flex justify-center">
             <button
-              class="text-white border-2 border-slate-100 rounded-2xl px-3 bg-transparent hover:bg-yellow-500 hover:text-black mt-5">
+              class="border-2 border-slate-100 rounded-2xl px-3 phone:bg-yellow-500 phone:text-black laptop:hover:bg-yellow-500 laptop:hover:text-black mt-5 laptop:text-white laptop:bg-transparent">
               Build your dreamhouse now
             </button>
           </div>
