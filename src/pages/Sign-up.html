@@ -12,39 +12,40 @@
 
   <body class="bg-slate-900 flex flex-col items-center m-5">
     <!-- Container start-->
-    <section class="bg-slate-800 m-5 p-8 rounded-xl">
+    <section
+      class="max-w-[1000px] w-full bg-slate-800 smallTablet:mt-10 smallTablet:px-10 smallTablet:py-10 rounded-xl smallPhone:px-4 smallPhone:py-5 smallPhone:m-0">
       <!-- Header section start -->
       <header>
         <nav
           role="navigation"
-          class="flex justify-between w-[993px] text-yellow-400 bg-transparent py-4">
+          class="w-full flex justify-between items-center laptop:-w-[768px] text-yellow-400 bg-transparent tablet:py-4 smallPhone:pb-2">
           <!-- Nav buttons start -->
-          <ul class="flex flex-row">
+          <ul class="flex flex-row phone:hidden smallTablet:flex">
             <li>
               <a
                 class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="../../index.html"
+                href="./src/pages/../../index.html"
                 >Home</a
               >
             </li>
             <li>
               <a
                 class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./Services.html"
+                href="./src/pages/Services.html"
                 >Services</a
               >
             </li>
             <li>
               <a
                 class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./Products.html"
+                href="./src/pages/Products.html"
                 >Products</a
               >
             </li>
             <li>
               <a
                 class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./About.html"
+                href="./src/pages/About.html"
                 >About Us</a
               >
             </li>
@@ -55,38 +56,93 @@
           <a
             class="bg-yellow-500 text-black rounded-lg px-5 py-2"
             href="./src/pages/Sign-up.html"
-            >Sign in</a
+            >Sign up</a
           >
-          <!-- Sign up End -->
+          <!-- Mobile menu starts-->
+          <div class="relative smallTablet:hidden">
+            <input class="peer hidden" type="checkbox" id="menuToggle" />
+
+            <label
+              class="fa-solid fa-bars text-white text-2xl rounded-lg px-5 py-2"
+              for="menuToggle"></label>
+
+            <div
+              class="hidden peer-checked:block absolute top-full right-0 bg-yellow-500 text-black w-[100px] rounded-lg">
+              <ul class="list-none m-0 p-0">
+                <li>
+                  <a
+                    href="../../index.html"
+                    class="block p-4 active:bg-black active:text-yellow-500 active:rounded-t-lg"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./Services.html"
+                    class="block p-4 active:bg-black active:text-yellow-500"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./Products.html"
+                    class="block p-4 active:bg-black active:text-yellow-500"
+                    >Products</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="./About.html"
+                    class="block p-4 active:bg-black active:text-yellow-500 active:rounded-b-lg"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile menu ends -->
         </nav>
       </header>
       <!-- Header section end -->
 
-      <!-- Hero section start -->
+      <!-- Register section start -->
       <section
-        role="Modern House Design Hero"
-        class="bg-[url('/src/assets/images/Hero/Hero.png')] w-full h-[760px] object-cover rounded-xl flex justify-center items-center">
+        role="Register"
+        class="w-full bg-[url('/src/assets/images/Hero/Hero.png')] bg-[center] aspect-square h-[760px] object-cover bg-no-repeat rounded-xl flex justify-center items-center">
         <div
-          class="w-[350px] h-[400px] bg-transparent/10 backdrop-blur-xl border-2 border-slate-400 rounded-2xl p-2">
-          <input type="text">
-          
-          <!-- <h1 class="font-sans text-6xl text-slate-300 pt-4 text-center">
-            Building <code class="text-yellow-500">the Future</code>
+          class="max-w-[800px] tablet:w-[400px] smallPhone:w-[300px] h-[400px] bg-transparent/40 backdrop-blur border-2 border-slate-400 rounded-2xl p-2">
+          <h1
+            class="font-sans phone:text-xl smallTablet:text-xl tablet:text-2xl text-slate-300 pt-4 text-center">
+            Create account
           </h1>
-          <p class="text-neutral-100 text-center mb-5 mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            minus repudiandae fuga laboriosam mollitia quae unde porro repellat
-            praesentium cupiditate.
-          </p>
+
+          <div class="flex flex-col text-white text-sm px-5">
+            <label class="ps-3" for="username">First Name</label>
+            <input class="m-3 rounded-xl" type="text" id="firstname" />
+
+            <label class="ps-3" for="username">Last Name</label>
+            <input class="m-3 rounded-xl" type="text" id="lastname" />
+
+            <label class="ps-3" for="username">Email</label>
+            <input class="m-3 rounded-xl" type="email" id="email" />
+
+            <label class="ps-3" for="password">Password</label>
+            <input class="m-3 rounded-xl" type="password" />
+
+            <label class="ps-3" for="passwordRe">Re-type password</label>
+            <input class="m-3 rounded-xl" type="passwordRe" />
+          </div>
+
           <div class="w-full h-[60px] flex justify-center">
             <button
-              class="text-white border-2 border-slate-100 rounded-2xl px-3 bg-transparent hover:bg-yellow-500 hover:text-black mt-5">
-              <a href="">Build your dreamhouse now</a>
-            </button> -->
+              class="border-2 border-slate-100 rounded-2xl px-5 bg-yellow-500 text-black laptop:hover:bg-black laptop:hover:text-yellow-500">
+              Register
+            </button>
           </div>
         </div>
       </section>
-      <!-- Hero section end -->
+      <!-- Register section end -->
     </section>
     <!-- Container end -->
   </body>
