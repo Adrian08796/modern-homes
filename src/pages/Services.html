@@ -61,7 +61,7 @@
           <!-- Sign up End -->
 
           <!-- Mobile menu starts-->
-          <div class="relative smallTablet:hidden">
+          <div class="relative smallTablet:hidden z-50">
             <input class="peer hidden" type="checkbox" id="menuToggle" />
 
             <label
@@ -73,21 +73,21 @@
               <ul class="list-none m-0 p-0">
                 <li>
                   <a
-                    href="./index.html"
+                    href="/index.html"
                     class="block p-4 active:bg-black active:text-yellow-500 active:rounded-t-lg"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./src/pages/Services.html"
+                    href="/src/pages/Services.html"
                     class="block p-4 active:bg-black active:text-yellow-500"
                     >Services</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./src/pages/Products.html"
+                    href="/src/pages/Products.html"
                     class="block p-4 active:bg-black active:text-yellow-500"
                     >Products</a
                   >
@@ -95,7 +95,7 @@
 
                 <li>
                   <a
-                    href="./src/pages/About.html"
+                    href="/src/pages/About.html"
                     class="block p-4 active:bg-black active:text-yellow-500 active:rounded-b-lg"
                     >About</a
                   >
@@ -108,30 +108,185 @@
       </header>
       <!-- Header section end -->
 
-      <!-- Hero section start -->
+      <!-- Table section start -->
       <section
         role="Modern House Design Hero"
-        class="w-full bg-[url('/src/assets/images/Hero/Hero.png')] bg-[center] aspect-square h-[760px] object-cover bg-no-repeat rounded-xl flex justify-center items-center">
+        class="w-full h-auto bg-[url('/src/assets/images/Hero/Hero.png')] bg-[center] aspect-square object-cover bg-no-repeat rounded-xl flex justify-center items-center">
         <div
-          class="max-w-[800px] h-[300px] bg-transparent/40 backdrop-blur border-2 border-slate-400 rounded-2xl p-2">
-          <h1
-            class="font-sans phone:text-3xl smallTablet:text-5xl tablet:text-6xl text-slate-300 pt-4 text-center">
-            Services
-          </h1>
-          <p class="text-neutral-100 text-center mb-5 mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            minus repudiandae fuga laboriosam mollitia quae unde porro repellat
-            praesentium cupiditate.
-          </p>
-          <div class="w-full h-[60px] flex justify-center">
-            <button
-              class="border-2 border-slate-100 rounded-2xl px-3 phone:active:bg-black phone:active:text-yellow-500 phone:bg-yellow-500 phone:text-black laptop:hover:bg-yellow-500 laptop:hover:text-black mt-5 laptop:text-white laptop:bg-transparent">
-              Build your dreamhouse now
-            </button>
+          class="w-full h-auto bg-transparent/40 backdrop-blur border-2 border-slate-400 rounded-2xl p-2">
+          <div class="overflow-x-auto relative">
+            <table class="w-[100%] text-sm text-left text-gray-400">
+              <thead class="text-xs uppercase bg-gray-700 text-gray-400">
+                <tr>
+                  <th scope="col" class="py-3 px-6 rounded-tl-xl w-[20%]">
+                    Name
+                  </th>
+                  <th scope="col" class="py-3 px-6">Preview</th>
+                  <th scope="col" class="py-3 px-6">Description</th>
+                  <th scope="col" class="py-3 px-6 rounded-tr-xl">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b bg-gray-800 border-gray-700">
+                  <td class="py-4 px-6 text-lg text-yellow-500">
+                    Arcadian Curve
+                  </td>
+                  <td class="py-4 px-6">
+                    <span
+                      ><img
+                        class="rounded-xl aspect-video"
+                        src="../assets/images/House01.png"
+                        alt=""
+                    /></span>
+                  </td>
+                  <td class="py-4 px-6 text-xs">
+                    <ul class="list-disc">
+                      <li>
+                        Architecture Style: Modern, with a sleek, elongated form
+                        that blends into the natural landscape.
+                      </li>
+
+                      <li>
+                        Key Features: Panoramic windows for immersive forest
+                        views. Elevated structure to minimize environmental
+                        impact. Ambient interior lighting for evening allure.
+                      </li>
+
+                      <li>Panoramic windows for immersive forest views.</li>
+
+                      <li>
+                        Materials: Eco-friendly and sustainable materials,
+                        possibly including recycled steel for the frame and
+                        energy-efficient glass for the windows.
+                      </li>
+                      <li>
+                        Location: Carpathian Mountains, designed to optimize
+                        both privacy and scenic views.
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="py-4 px-6"></td>
+                </tr>
+                <tr class="bg-gray-800 border-b border-gray-700">
+                  <td class="py-4 px-6 text-lg text-yellow-500">
+                    Zenith Haven
+                  </td>
+                  <td class="py-4 px-6">
+                    <span
+                      ><img
+                        class="rounded-xl aspect-video"
+                        src="../assets/images/House02.png"
+                        alt=""
+                    /></span>
+                  </td>
+                  <td class="py-4 px-6 text-xs">
+                    <ul class="list-disc">
+                      <li>
+                        Architecture Style: Avant-garde with bold, geometric
+                        lines and cantilevered elements.
+                      </li>
+                      <li>
+                        Key Features: Cantilevered roofs for dramatic overhangs.
+                        Expansive glass walls to connect interior with nature.
+                        Rugged concrete base blending with natural terrain.
+                      </li>
+                      <li>
+                        Materials: Combination of concrete for durability and
+                        structural integrity, with extensive use of glass for
+                        natural lighting.
+                      </li>
+                      <li>
+                        Environmental Impact: Designed with considerations for
+                        reducing footprint and integrating into the surrounding
+                        landscape.
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="py-4 px-6"></td>
+                </tr>
+                <tr class="bg-gray-800 border-b border-gray-700">
+                  <td class="py-4 px-6 text-lg text-yellow-500">
+                    Cliffside Lumina
+                  </td>
+                  <td class="py-4 px-6">
+                    <span
+                      ><img
+                        class="rounded-xl aspect-video"
+                        src="../assets/images/House03.png"
+                        alt=""
+                    /></span>
+                  </td>
+                  <td class="py-4 px-6 text-xs">
+                    <ul class="list-disc">
+                      <li>
+                        Architecture Style: Contemporary with clean lines and an
+                        emphasis on horizontal planes.
+                      </li>
+                      <li>
+                        Key Features: Cliffside positioning for unobstructed sea
+                        views. Open-plan living spaces with seamless
+                        indoor-outdoor transitions. Minimalist aesthetic with
+                        strategic lighting for ambiance.
+                      </li>
+                      <li>
+                        Materials: Use of corrosion-resistant materials suitable
+                        for sea-side environments, likely stainless steel and
+                        treated wood, along with energy-efficient glass.
+                      </li>
+                      <li>
+                        Sustainability: Features likely include rainwater
+                        harvesting and solar panels to minimize environmental
+                        impact.
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="py-4 px-6"></td>
+                </tr>
+                <tr class="bg-gray-800 border-gray-700">
+                  <td class="py-4 px-6 rounded-bl-xl text-lg text-yellow-500">
+                    Emerald Whisper
+                  </td>
+                  <td class="py-4 px-6">
+                    <span
+                      ><img
+                        class="rounded-xl aspect-video"
+                        src="../assets/images/Hero.png"
+                        alt=""
+                    /></span>
+                  </td>
+                  <td class="py-4 px-6 text-xs">
+                    <ul class="list-disc">
+                      <li>
+                        Architecture Style: Futuristic, with an emphasis on
+                        dynamic lighting and sleek forms.
+                      </li>
+                      <li>
+                        Key Features: Vibrant teal and amber exterior lighting
+                        for a distinctive night-time appearance. Large,
+                        frameless glass windows for extensive natural light
+                        during the day. Integration of smart home technology for
+                        energy efficiency and comfort.
+                      </li>
+                      <li>
+                        Materials: Smart glass for adjustable transparency and
+                        insulation, combined with lightweight, high-strength
+                        materials for the structure.
+                      </li>
+                      <li>
+                        Innovations: Likely incorporates advanced home
+                        automation systems for lighting, temperature control,
+                        and security.
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="py-4 px-6 rounded-br-xl"></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
-      <!-- Hero section end -->
+      <!-- Table section end -->
     </section>
     <!-- Container end -->
   </body>
