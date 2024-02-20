@@ -120,29 +120,42 @@
           </h1>
 
           <div class="flex flex-col text-white text-sm px-5">
-            <label class="ps-3" for="username">First Name</label>
+            <label class="ps-3" for="username" pattern="[A-Za-z]+"
+              >First Name</label
+            >
             <input
-              class="m-3 px-2 rounded-xl text-black"
+              class="m-3 px-2 rounded-xl text-black focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500"
               type="text"
-              id="firstname" />
+              id="firstname"
+              required
+              pattern="[A-Za-z]+" />
 
             <label class="ps-3" for="username">Last Name</label>
             <input
-              class="m-3 px-2 rounded-xl text-black"
+              class="m-3 px-2 rounded-xl text-black focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500"
               type="text"
-              id="lastname" />
+              id="lastname"
+              required
+              pattern="[A-Za-z]+" />
 
             <label class="ps-3" for="username">Email</label>
             <input
-              class="m-3 px-2 rounded-xl text-black"
+              class="m-3 px-2 rounded-xl text-black focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500"
               type="email"
-              id="email" />
+              id="email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
 
             <label class="ps-3" for="password">Password</label>
-            <input class="m-3 px-2 rounded-xl text-black" type="password" />
+            <input
+              class="m-3 px-2 rounded-xl text-black focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500"
+              type="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
 
             <label class="ps-3" for="password">Re-type password</label>
-            <input class="m-3 px-2 rounded-xl text-black" type="password" />
+            <input
+              class="m-3 px-2 rounded-xl text-black focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500"
+              type="password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
           </div>
 
           <div class="w-full h-[60px] flex justify-center">
