@@ -18,34 +18,34 @@
       <header>
         <nav
           role="navigation"
-          class="w-full flex justify-between items-center laptop:-w-[768px] text-yellow-400 bg-transparent tablet:py-4 smallPhone:pb-2">
+          class="w-full flex justify-between items-center laptop:-w-[768px] text-yellow-400 bg-transparent py-4">
           <!-- Nav buttons start -->
           <ul class="flex flex-row phone:hidden smallTablet:flex">
             <li>
               <a
-                class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./src/pages/../../index.html"
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/../../index.html"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./src/pages/Services.html"
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/Services.html"
                 >Services</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./src/pages/Products.html"
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/Products.html"
                 >Products</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 hover:border-t-4 border-yellow-500 ms-2"
-                href="./src/pages/About.html"
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/About.html"
                 >About Us</a
               >
             </li>
@@ -54,16 +54,18 @@
 
           <!-- Sign Up Start -->
           <a
-            class="bg-yellow-500 text-black rounded-lg px-5 py-2"
-            href="./src/pages/Sign-up.html"
+            class="bg-yellow-500 text-black phone:active:bg-black phone:active:text-yellow-500 rounded-lg px-5 py-2"
+            href="/src/pages/Sign-up.html"
             >Sign up</a
           >
+          <!-- Sign up End -->
+
           <!-- Mobile menu starts-->
-          <div class="relative smallTablet:hidden">
+          <div class="relative smallTablet:hidden z-50">
             <input class="peer hidden" type="checkbox" id="menuToggle" />
 
             <label
-              class="fa-solid fa-bars text-white text-2xl rounded-lg px-5 py-2"
+              class="fa-solid fa-bars text-white active:text-yellow-500 text-2xl rounded-lg px-5 py-2"
               for="menuToggle"></label>
 
             <div
@@ -71,21 +73,21 @@
               <ul class="list-none m-0 p-0">
                 <li>
                   <a
-                    href="../../index.html"
+                    href="./index.html"
                     class="block p-4 active:bg-black active:text-yellow-500 active:rounded-t-lg"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./Services.html"
+                    href="./src/pages/Services.html"
                     class="block p-4 active:bg-black active:text-yellow-500"
                     >Services</a
                   >
                 </li>
                 <li>
                   <a
-                    href="./Products.html"
+                    href="./src/pages/Products.html"
                     class="block p-4 active:bg-black active:text-yellow-500"
                     >Products</a
                   >
@@ -93,7 +95,7 @@
 
                 <li>
                   <a
-                    href="./About.html"
+                    href="./src/pages/About.html"
                     class="block p-4 active:bg-black active:text-yellow-500 active:rounded-b-lg"
                     >About</a
                   >
@@ -119,24 +121,33 @@
 
           <div class="flex flex-col text-white text-sm px-5">
             <label class="ps-3" for="username">First Name</label>
-            <input class="m-3 rounded-xl" type="text" id="firstname" />
+            <input
+              class="m-3 px-2 rounded-xl text-black"
+              type="text"
+              id="firstname" />
 
             <label class="ps-3" for="username">Last Name</label>
-            <input class="m-3 rounded-xl" type="text" id="lastname" />
+            <input
+              class="m-3 px-2 rounded-xl text-black"
+              type="text"
+              id="lastname" />
 
             <label class="ps-3" for="username">Email</label>
-            <input class="m-3 rounded-xl" type="email" id="email" />
+            <input
+              class="m-3 px-2 rounded-xl text-black"
+              type="email"
+              id="email" />
 
             <label class="ps-3" for="password">Password</label>
-            <input class="m-3 rounded-xl" type="password" />
+            <input class="m-3 px-2 rounded-xl text-black" type="password" />
 
-            <label class="ps-3" for="passwordRe">Re-type password</label>
-            <input class="m-3 rounded-xl" type="passwordRe" />
+            <label class="ps-3" for="password">Re-type password</label>
+            <input class="m-3 px-2 rounded-xl text-black" type="password" />
           </div>
 
           <div class="w-full h-[60px] flex justify-center">
             <button
-              class="border-2 border-slate-100 rounded-2xl px-5 bg-yellow-500 text-black laptop:hover:bg-black laptop:hover:text-yellow-500">
+              class="border-2 border-slate-100 rounded-2xl px-5 bg-yellow-500 text-black laptop:hover:bg-black laptop:hover:text-yellow-500 phone:active:bg-black phone:active:text-yellow-500">
               Register
             </button>
           </div>

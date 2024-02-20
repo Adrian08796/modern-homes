@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/49f337f749.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body class="bg-slate-900 flex flex-col items-center m-5">
+    <!-- Container start-->
+    <section
+      class="max-w-[1000px] w-full bg-slate-800 smallTablet:mt-10 smallTablet:px-10 smallTablet:py-10 rounded-xl smallPhone:px-4 smallPhone:py-5 smallPhone:m-0">
+      <!-- Header section start -->
+      <header>
+        <nav
+          role="navigation"
+          class="w-full flex justify-between items-center laptop:-w-[768px] text-yellow-400 bg-transparent py-4">
+          <!-- Nav buttons start -->
+          <ul class="flex flex-row phone:hidden smallTablet:flex">
+            <li>
+              <a
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/../../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/Services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/Products.html"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                href="/src/pages/About.html"
+                >About Us</a
+              >
+            </li>
+          </ul>
+          <!-- Nav buttons end -->
+
+          <!-- Sign Up Start -->
+          <a
+            class="bg-yellow-500 text-black phone:active:bg-black phone:active:text-yellow-500 rounded-lg px-5 py-2"
+            href="/src/pages/Sign-up.html"
+            >Sign up</a
+          >
+          <!-- Sign up End -->
+
+          <!-- Mobile menu starts-->
+          <div class="relative smallTablet:hidden z-50">
+            <input class="peer hidden" type="checkbox" id="menuToggle" />
+
+            <label
+              class="fa-solid fa-bars text-white text-2xl rounded-lg px-5 py-2"
+              for="menuToggle"></label>
+
+            <div
+              class="hidden peer-checked:block absolute top-full right-0 bg-yellow-500 text-black w-[100px] rounded-lg">
+              <ul class="list-none m-0 p-0">
+                <li>
+                  <a
+                    href="./index.html"
+                    class="block p-4 active:bg-black active:text-yellow-500 active:rounded-t-lg"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./src/pages/Services.html"
+                    class="block p-4 active:bg-black active:text-yellow-500"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./src/pages/Products.html"
+                    class="block p-4 active:bg-black active:text-yellow-500"
+                    >Products</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="./src/pages/About.html"
+                    class="block p-4 active:bg-black active:text-yellow-500 active:rounded-b-lg"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile menu ends -->
+        </nav>
+      </header>
+      <!-- Header section end -->
+
+      <!-- Hero section start -->
+      <section
+        role="Modern House Design Hero"
+        class="w-full bg-[url('/src/assets/images/Hero/Hero.png')] bg-[center] aspect-square h-[760px] object-cover bg-no-repeat rounded-xl flex justify-center items-center">
+        <div
+          class="relative w-full max-w-[800px] h-[600px] bg-transparent/40 backdrop-blur-3xl border-2 border-slate-400 rounded-2xl p-10 overflow-y-scroll no-scrollbar">
+          <button
+            class="absolute top-1 right-1 smallTablet:translate-y-[170px] smallPhone:translate-y-[120px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl text-yellow-500"></i>
+          </button>
+
+          <button
+            class="absolute top-1 left-1 smallTablet:translate-y-[170px] smallPhone:translate-y-[120px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl rotate-180 text-yellow-500"></i>
+          </button>
+
+          <div
+            class="Card smallTablet:w-auto smallPhone:h-[200px] smallTablet:h-[300px] rounded-xl bg-[url('/src/assets/images/House01.png')] bg-cover bg-center"></div>
+          <h1 class="text-yellow-400 text-2xl p-2">The Arcadian Curve</h1>
+          <p class="text-white p-4">
+            Nestled amidst the dense foliage of the Carpathian Mountains, this
+            visionary abode offers a serene retreat from the world. The
+            structure boasts a sleek, elongated form that curves gently, echoing
+            the fluidity of the natural environment. Its panoramic windows frame
+            the lush forest, creating a seamless connection between the interior
+            comfort and the wild outdoors. The innovative design seems to float
+            above the ground, supported by a subtle stone base that anchors it
+            to the sloping terrain. The house is a modern marvel, designed not
+            only for aesthetic appeal but also for embracing the tranquility and
+            beauty of its mountainous setting. The ambient lighting within casts
+            a warm glow that contrasts with the cool twilight, promising a
+            sanctuary of peace and futuristic elegance.
+          </p>
+
+          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
+          <!-- <button class="absolute top-1 right-1 translate-y-[250px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl text-yellow-500"></i>
+          </button>
+
+          <button class="absolute top-1 left-1 translate-y-[250px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl rotate-180 text-yellow-500"></i>
+          </button> -->
+
+          <div
+            class="Card smallTablet:w-auto smallPhone:h-[200px] smallTablet:h-[300px] rounded-xl bg-[url('/src/assets/images/House02.png')] bg-cover bg-center"></div>
+          <h1 class="text-yellow-400 text-2xl p-2">Zenith Haven</h1>
+          <p class="text-white">
+            Emerging from the misty Carpathian landscape, this avant-garde
+            dwelling, with its commanding cantilevered roofs, stands as a
+            testament to architectural innovation. The juxtaposition of the
+            rugged, natural terrain against the house’s bold, geometric lines
+            offers an aesthetic of striking contrasts. The raw concrete base
+            seems to merge with the stone-strewn ground, while the upper
+            sections feature expansive glass walls, inviting the outside in and
+            providing a contemplative view of the enveloping forest. This house
+            is a fortress of solitude, designed for those who crave a life
+            unencumbered by the ordinary, providing an almost otherworldly
+            experience of luxury and tranquility, harmoniously balanced with the
+            untamed environment it resides within.
+          </p>
+
+          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+
+          <!-- <button class="absolute top-1 right-1 translate-y-[250px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl text-yellow-500"></i>
+          </button>
+
+          <button class="absolute top-1 left-1 translate-y-[250px]">
+            <i
+              class="fa-solid fa-square-caret-right text-4xl rotate-180 text-yellow-500"></i>
+          </button> -->
+
+          <div
+            class="Card smallTablet:w-auto smallPhone:h-[200px] smallTablet:h-[300px] rounded-xl bg-[url('/src/assets/images/House03.png')] bg-cover bg-center"></div>
+          <h1 class="text-yellow-400 text-2xl p-2">Cliffside Lumina</h1>
+          <p class="text-white">
+            Perched atop a rugged cliff, this modern architectural masterpiece
+            stands as a beacon of contemporary luxury against the dramatic
+            backdrop of mountain and sea. The house, with its clean lines and
+            flat roofs, appears to defy gravity, extending over the abyss with
+            confident elegance. Its design is a harmonious blend of dark, sleek
+            materials and transparent glass, which allows for unobstructed views
+            of the horizon where the sky meets the ocean. As dusk falls, the
+            interior lights cast a warm, inviting glow, transforming the house
+            into a lantern guiding the way for seafarers. This residence is not
+            just a home, but a statement—a sanctuary for those who seek to
+            combine the thrill of mountainous seclusion with the serenity of the
+            sea, all encapsulated within a structure that resonates with the
+            future of design.
+          </p>
+
+          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+        </div>
+      </section>
+
+      <!-- Hero section end -->
+    </section>
+    <!-- Container end -->
+  </body>
+</html>
