@@ -35,6 +35,14 @@
     }
 } */
 
+@layer base {
+    @font-face {
+      font-family: FertigoPro;
+      font-weight: 400;
+      src: url("../assets/fonts/Fertigo_PRO-webfont.woff") format("woff");
+    }
+}
+
 @layer utilities {
     @variants responsive {
       /* Chrome, Safari and Opera */

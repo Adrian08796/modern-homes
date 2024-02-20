@@ -8,6 +8,10 @@ export default {
         "footer-texture": "url('/img/footer-texture.png')",
       },
 
+      fontFamily: {
+        FertigoPro: 'FertigoPro',
+      },
+
       screens: {
         smallPhone: "300px",
         phone: "300px",
