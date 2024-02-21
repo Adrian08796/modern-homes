@@ -23,28 +23,28 @@
           <ul class="flex flex-row phone:hidden smallTablet:flex">
             <li>
               <a
-                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                class="font-FertigoPro px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
                 href="/src/pages/../../index.html"
                 >Home</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                class="font-FertigoPro px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
                 href="/src/pages/Services.html"
                 >Services</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                class="font-FertigoPro px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
                 href="/src/pages/Products.html"
                 >Products</a
               >
             </li>
             <li>
               <a
-                class="px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
+                class="font-FertigoPro px-5 py-2 active:border-2 active:rounded-lg laptop:active:border-none laptop:active:text-white laptop:hover:border-t-4 border-yellow-500 ms-2 laptop:text-lg"
                 href="/src/pages/About.html"
                 >About Us</a
               >
@@ -115,11 +115,11 @@
         <div
           class="w-full h-auto bg-transparent/40 backdrop-blur border-2 border-slate-400 rounded-2xl p-2">
           <div
-            class="overflow-x-auto w-full smallPhone:h-[500px] smallTablet:h-auto">
+            class="overflow-x-auto w-full smallPhone:hidden smallTablet:hidden laptop:flex">
             <table class="w-[100%] text-sm text-left text-gray-400">
               <thead class="text-xs uppercase bg-gray-700 text-gray-400">
                 <tr>
-                  <th scope="col" class="py-3 px-6 rounded-tl-xl">Name</th>
+                  <th scope="col" class="py-3 px-6 rounded-tl-xl">Project</th>
                   <th scope="col" class="py-3 px-6">Preview</th>
                   <th scope="col" class="py-3 px-6">Description</th>
                   <th scope="col" class="py-3 px-6 rounded-tr-xl">Price</th>
@@ -287,6 +287,73 @@
               </tbody>
             </table>
           </div>
+
+          <!-- Grid Table implementation starts -->
+          <div
+            class="grid gap-4 smallPhone::grid-cols-2 smallTablet:grid-cols-2 laptop::hidden">
+            <div class="bg-gray-800 rounded-xl p-4">
+              <img
+                src="../assets/images/House01.png"
+                alt="Arcadian Curve"
+                class="rounded-xl" />
+              <h3 class="text-yellow-500 font-FertigoPro py-2">
+                Arcadian Curve
+              </h3>
+              <p class="text-xs text-gray-400">
+                Architecture Style: Modern, with a sleek, elongated form that
+                blends into the natural landscape. Key Features: Panoramic
+                windows for immersive forest views. Elevated structure to
+                minimize environmental impact. Ambient interior lighting for
+                evening allure.
+              </p>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-4">
+              <img
+                src="../assets/images/House02.png"
+                alt="Zenith Haven"
+                class="rounded-xl" />
+              <h3 class="text-yellow-500 font-FertigoPro py-2">Zenith Haven</h3>
+              <p class="text-xs text-gray-400">
+                Architecture Style: Avant-garde with bold, geometric lines and
+                cantilevered elements. Key Features: Cantilevered roofs for
+                dramatic overhangs. Expansive glass walls to connect interior
+                with nature. Rugged concrete base blending with natural terrain.
+              </p>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-4">
+              <img
+                src="../assets/images/House03.png"
+                alt="Cliffside Lumina"
+                class="rounded-xl" />
+              <h3 class="text-yellow-500 font-FertigoPro py-2">
+                Cliffside Lumina
+              </h3>
+              <p class="text-xs text-gray-400">
+                Architecture Style: Contemporary with clean lines and an
+                emphasis on horizontal planes. Key Features: Cliffside
+                positioning for unobstructed sea views. Open-plan living spaces
+                with seamless indoor-outdoor transitions. Minimalist aesthetic
+                with strategic lighting for ambiance.
+              </p>
+            </div>
+            <div class="bg-gray-800 rounded-xl p-4">
+              <img
+                src="../assets/images/Hero.png"
+                alt="Emerald Whisper"
+                class="rounded-xl" />
+              <h3 class="text-yellow-500 font-FertigoPro py-2">
+                Emerald Whisper
+              </h3>
+              <p class="text-xs text-gray-400">
+                Architecture Style: Futuristic, with an emphasis on dynamic
+                lighting and sleek forms. Key Features: Vibrant teal and amber
+                exterior lighting for a distinctive night-time appearance.
+                Large, frameless glass windows for extensive natural light
+                during the day.
+              </p>
+            </div>
+          </div>
+          <!-- Grid Table implementation ends -->
         </div>
       </section>
       <!-- Table section end -->

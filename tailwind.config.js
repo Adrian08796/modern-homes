@@ -9,7 +9,7 @@ export default {
       },
 
       fontFamily: {
-        FertigoPro: 'FertigoPro',
+        FertigoPro: "FertigoPro",
       },
 
       screens: {
@@ -28,7 +28,7 @@ export default {
       },
 
       fontSize: {
-        customFont: "53pt",
+        customFont: "6pt",
       },
 
       spacing: {
